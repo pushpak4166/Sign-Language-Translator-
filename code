@@ -1,13 +1,13 @@
 #include <PCD8544.h>
-static PCD8544 lcd;
-const int f_0 = 9; //Declare input pins
-const int f_1 = 10;
-const int f_2 = 11;
-const int f_3 = 12;
-const int f_4 = 13;
-int curr = 0;
-int temp = 0;
-int flag = 0;
+    static PCD8544 lcd;
+    const int f_0 = 9; //Declare input pins
+    const int f_1 = 10;
+    const int f_2 = 11
+    const int f_3 = 12;
+    const int f_4 = 13;
+    int curr = 0;
+    int temp = 0;
+    int flag = 0;
 //Function to display string on lcd
 void write_lcd(String wor)
 {
@@ -187,5 +187,5 @@ void loop()
         if(curr == 30)
         write_lcd("3");
         }
-    digitalWrite(8, LOW);
+    digitalWrite(8,LOW);
 }
